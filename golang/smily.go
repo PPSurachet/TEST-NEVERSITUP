@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import "regexp"
 
-func CountSmilyFace(text []string) int {
-    // TODO : start your code here
+func countSmilyFace(texts []string) int {
+	regex := "[:;][-~]?[)D]"
+	re := regexp.MustCompile(regex)
+
+	count := 0
+	for _, text := range texts {
+		if re.MatchString(text) {
+			count++
+		}
+	}
+
+	return count
 }

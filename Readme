@@ -1,0 +1,14 @@
+## Javascript
+
+you cal run with npm run test
+
+## Typescript
+
+you can run with 2 step
+
+1. npm run build
+2. npm run test
+
+## Golang
+
+you can run with go run \*.go
